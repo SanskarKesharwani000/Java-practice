@@ -1,0 +1,25 @@
+class N1 {
+    @SuppressWarnings("removal")
+    public static void main(String[] args) {
+        // @SuppressWarnings("removal")
+        Integer x = new Integer(32);
+
+        System.out.println(x);
+
+        // @SuppressWarnings("removal")
+        Float y = new Float(2.3);
+
+        System.out.println(y);
+    }
+    
+    @SuppressWarnings("removal")
+    public void process() {
+        Integer x = new Integer(32);
+
+        System.out.println(x);
+
+        Float y = new Float(2.3);
+
+        System.out.println(y);
+    }
+}

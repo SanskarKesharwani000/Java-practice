@@ -1,0 +1,5 @@
+interface H {
+    interface A {
+        
+    }
+}

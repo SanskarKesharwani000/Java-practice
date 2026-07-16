@@ -1,0 +1,5 @@
+Reads characters into a portion of an array. This method will block until some input is available, 
+an I/O error occurs, or the end of the stream is reached. If len is zero, then no characters are 
+read and 0 is returned; otherwise, there is an attempt to read at least one character. If no character 
+is available because the stream is at its end, the value -1 is returned; otherwise, at least one 
+character is read and stored into cbuf.

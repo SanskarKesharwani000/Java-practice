@@ -1,0 +1,3 @@
+class SuperMan extends SuperHuman {
+    
+}

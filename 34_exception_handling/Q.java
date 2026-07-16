@@ -1,0 +1,9 @@
+class Q {
+    public static void main(String[] args) {
+        try {
+
+        } catch(ArithmeticException e) {
+            
+        }
+    }       
+}

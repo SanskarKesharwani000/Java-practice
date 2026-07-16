@@ -1,0 +1,22 @@
+class T1 {
+    static void pro(String[]... y) {
+        for(String[] next : y) {
+            for(String nx : next)
+                System.out.print(nx + " ");
+
+            System.out.println();
+        }
+    }    
+
+    public static void main(String[] args) {
+        String[][] x = new String[][] {
+                                        {"A","B","C","D", "E", "F"}, 
+                                        {"1", "2", "3", "4"}, 
+                                        {"a","b", "c"},
+                                        {"7", "8"}
+                                    };
+        
+        pro(x);
+        pro();
+    }    
+}

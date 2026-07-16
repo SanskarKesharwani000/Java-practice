@@ -1,0 +1,25 @@
+class T1 {
+    public static void main(String[] args) {
+        try {
+            System.out.println("some code... " + args[0]);
+        } catch(ArrayIndexOutOfBoundsException w) {
+            // System.out.println(w);
+            // converting an exception from one type to another...
+            try {
+                throw new MissingCommandlineArgumentException("one argument expected...");
+            } catch(MissingCommandlineArgumentException e) {
+                e.printStackTrace();
+            }                
+        }
+    }   
+}
+
+class MissingCommandlineArgumentException extends RuntimeException {
+    MissingCommandlineArgumentException() {
+
+    }
+    
+    MissingCommandlineArgumentException(String msg) {
+        super(msg);
+    }
+}

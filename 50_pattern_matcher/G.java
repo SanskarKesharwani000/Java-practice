@@ -1,0 +1,14 @@
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+class G {
+    public static void main(String[] args) {
+        Pattern p = Pattern.compile("om");
+
+        Matcher m = p.matcher("my friend om is a good guy. om is in class 12th and om is a good singer");
+
+        while(m.find()) {            
+            System.out.println(m.group() + " - " + m.start() + " - " + m.end());
+        } 
+    }
+}

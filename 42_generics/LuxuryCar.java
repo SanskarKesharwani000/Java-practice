@@ -1,0 +1,3 @@
+class LuxuryCar extends Car {
+    
+}
